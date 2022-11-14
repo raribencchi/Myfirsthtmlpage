@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greek Yogurt</title>
+</head>
+<style>
+    body {
+        background-color: #B4F8C8;
+    }
+    
+    h1 {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 30px;
+        color: blueviolet;
+        padding: 15px;
+        border: 1px solid green;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    }
+    
+    h2 {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 20px;
+        color: blueviolet;
+        padding: 50px 50px 10px 50px;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    }
+    
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        border-radius: 10px;
+        background-image: linear-gradient(pink, white, blueviolet);
+    }
+    
+    li {
+        display: inline;
+        margin: 0 auto;
+    }
+    
+    p {
+        line-height: 1.5;
+        font-size: 14px;
+        margin: 20px 0 10px;
+        text-align: justify;
+    }
+    
+    Button {
+        display: block;
+        margin: 15px auto;
+        color: white;
+        background: blueviolet;
+        font-size: 18px;
+        padding: 15px 30px;
+        border: 1px solid #885df1;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+        border-radius: 50px;
+        transition: all 300ms ease-in-out;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    
+    button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 20px;
+        display: block;
+        text-align: center;
+    }
+    
+    .readMore {
+        display: block;
+        margin: 10px;
+        color: #885df1;
+        text-decoration: none;
+    }
+    
+    .readMore:hover {
+        text-decoration: underline;
+        color: black;
+    }
+    
+    .footer {
+        text-align: center;
+        padding: 80px;
+        margin-top: 60px;
+        margin-bottom: 10px;
+    }
+    
+    .contents {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px 60px;
+    }
+</style>
+
+<body>
+    <div class="contents">
+
+        <h1>
+            <strong>I Love Yogurt</strong>
+        </h1>
+
+        <h2>
+
+            <strong>Especially Greek Yogurt</strong>
+        </h2>
+        <ul>
+            <hr>
+            <li>
+
+                <img src="https://skinnyms.com/wp-content/uploads/2017/03/Fat-Free-Yogurt-vs.-Greek-Yogurt-Which-One-Is-Better-for-You.jpg"> </li>
+            <hr>
+            <p><strong>Plain Greek yogurt</strong> is a nutrient-packed snack that has many health benefits. Read on to discover the benefits of adding Greek yogurt to your diet. Greek, or strained, yogurt isn’t just a fad. This dairy product, which is different
+                from regular, sweeter yogurt, has quadrupled in production from 2008 to 2013. Greek yogurt makers add an extra step to their process so that excess water, lactose, and minerals drain out. What’s left is a creamy, rich yogurt with less
+                sugar, more carbs, and a tart taste. The acidity also makes it easier for your body to absorb other nutrients.
+            </p>
+
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Strained_yogurt" target="blank" class="readMore"> 
+                Read more on wikipedia
+            </a>
+            </li>
+
+            <hr>
+
+            <button>TRY GREEK YOGURT</button>
+
+            <p class="footer">
+
+                Page by Rashmi Aribenchi
+
+            </p>
+    </div>
+
+    <script>
+        function tryYogurt() {
+
+            let name = prompt("What is your name?");
+            let email = prompt("What is your Email address?");
+            let emoji = prompt("What is your favorite emoji?");
+
+            if (name.length > 0 && email.length > 0) {
+
+                alert("Hi " + name + "," + "we will be in touch  via email, meanwhile have lots of yogurt! " + emoji);
+
+
+            } else {
+                alert("Hi" + "," + "Thank you for checking 'Greek Yogurt' page.😊 ");
+
+
+            }
+
+        }
+
+        let tryButton = document.querySelector("button");
+
+        tryButton.addEventListener("click", tryYogurt);
+    </script>
+
+</body>
+
+</html>
